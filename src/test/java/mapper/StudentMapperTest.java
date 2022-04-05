@@ -7,6 +7,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,6 +32,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentMapperTest
 {
 
+    private static final Logger log = LoggerFactory.getLogger(StudentMapperTest.class);
     @Test
     void findAll() throws IOException
     {
